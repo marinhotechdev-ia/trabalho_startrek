@@ -10,16 +10,56 @@
 }
 
 body {
-    background-color: #0a0a1a;
-    background-image: url('imagens/discovery_hero.png');
+    /* overlay escuro + imagem de fundo — o gradiente garante legibilidade do texto */
+    background-image:
+        linear-gradient(rgba(3, 6, 20, 0.72), rgba(3, 6, 20, 0.72)),
+        url('imagens/discovery_hero.png');
+    background-color: #03060f;
     background-size: cover;
-    background-position: center top;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-blend-mode: multiply;
     color: #ddeeff;
     font-family: Arial, sans-serif;
     font-size: 16px;
 }
+
+/* === EFEITO DE VIAGEM: posição desloca em diagonal de início → contato === */
+
+/* Início — canto SUPERIOR ESQUERDO da imagem */
+body.pagina-inicio {
+    background-position: 0% 0%;
+}
+
+/* Temporada 1 */
+body.pagina-t1 {
+    background-position: 17% 17%;
+}
+
+/* Temporada 2 */
+body.pagina-t2 {
+    background-position: 33% 33%;
+}
+
+/* Temporada 3 */
+body.pagina-t3 {
+    background-position: 50% 50%;
+}
+
+/* Temporada 4 */
+body.pagina-t4 {
+    background-position: 67% 67%;
+}
+
+/* Galeria */
+body.pagina-galeria {
+    background-position: 83% 83%;
+}
+
+/* Contato — canto INFERIOR DIREITO da imagem */
+body.pagina-contato {
+    background-position: 100% 100%;
+}
+
 
 /* ========== CABEÇALHO ========== */
 header {
