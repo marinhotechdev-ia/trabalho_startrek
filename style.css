@@ -10,54 +10,64 @@
 }
 
 body {
-    /* overlay escuro + imagem de fundo — o gradiente garante legibilidade do texto */
+    /* Camada 1: overlay escuro cobre tudo | Camada 2: nave cresce a cada página */
     background-image:
-        linear-gradient(rgba(3, 6, 20, 0.72), rgba(3, 6, 20, 0.72)),
+        linear-gradient(rgba(3, 6, 20, 0.65), rgba(3, 6, 20, 0.65)),
         url('imagens/discovery_hero.png');
     background-color: #03060f;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
     color: #ddeeff;
     font-family: Arial, sans-serif;
     font-size: 16px;
 }
 
-/* === EFEITO DE VIAGEM: posição desloca em diagonal de início → contato === */
+/* =============================================
+   EFEITO DE VIAGEM — nave cresce a cada página
+   Tamanho em "em": 1em = 16px no base do body
+   Posição: desloca do canto sup-esq → inf-dir
+   ============================================= */
 
-/* Início — canto SUPERIOR ESQUERDO da imagem */
+/* index.html — nave PEQUENA, canto superior esquerdo */
 body.pagina-inicio {
-    background-position: 0% 0%;
+    background-size: cover, 80em;
+    background-position: 0 0, 0% 0%;
 }
 
-/* Temporada 1 */
+/* Temporada 1 — começando a crescer */
 body.pagina-t1 {
-    background-position: 17% 17%;
+    background-size: cover, 120em;
+    background-position: 0 0, 17% 17%;
 }
 
 /* Temporada 2 */
 body.pagina-t2 {
-    background-position: 33% 33%;
+    background-size: cover, 175em;
+    background-position: 0 0, 33% 33%;
 }
 
 /* Temporada 3 */
 body.pagina-t3 {
-    background-position: 50% 50%;
+    background-size: cover, 240em;
+    background-position: 0 0, 50% 50%;
 }
 
-/* Temporada 4 */
+/* Temporada 4 — nave bem grande */
 body.pagina-t4 {
-    background-position: 67% 67%;
+    background-size: cover, 340em;
+    background-position: 0 0, 67% 67%;
 }
 
 /* Galeria */
 body.pagina-galeria {
-    background-position: 83% 83%;
+    background-size: cover, 440em;
+    background-position: 0 0, 83% 83%;
 }
 
-/* Contato — canto INFERIOR DIREITO da imagem */
+/* contato.html — nave GRANDE, canto INFERIOR DIREITO */
 body.pagina-contato {
-    background-position: 100% 100%;
+    background-size: cover, 560em;
+    background-position: 0 0, 100% 100%;
 }
 
 
