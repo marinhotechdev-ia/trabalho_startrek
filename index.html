@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site fan sobre Star Trek Discovery - explore as temporadas, personagens e o universo da série mais inovadora de Star Trek.">
+    <title>Star Trek Discovery - Início</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO E MENU -->
+    <header>
+        <div class="header-container">
+            <div class="logo-area">
+                <div class="logo-simbolo"></div>
+                <div class="logo-texto">
+                    <h1>Star Trek Discovery</h1>
+                    <span>Fan Site &bull; Temporadas 1 a 4</span>
+                </div>
+            </div>
+            <nav id="menu-principal">
+                <ul>
+                    <li><a href="index.html" class="ativo" id="nav-inicio">Início</a></li>
+                    <li><a href="temporada1.html" id="nav-t1">Temporada 1</a></li>
+                    <li><a href="temporada2.html" id="nav-t2">Temporada 2</a></li>
+                    <li><a href="temporada3.html" id="nav-t3">Temporada 3</a></li>
+                    <li><a href="temporada4.html" id="nav-t4">Temporada 4</a></li>
+                    <li><a href="galeria.html" id="nav-galeria">Galeria</a></li>
+                    <li><a href="contato.html" id="nav-contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+        <!-- HERO - USS Discovery -->
+        <section class="hero">
+            <img src="imagens/discovery_hero.png" alt="USS Discovery voando pelo espaço profundo com uma nebulosa ao fundo">
+            <div class="hero-overlay">
+                <span class="hero-badge">Estreia 2017</span>
+                <h2>Star Trek<br>Discovery</h2>
+                <p>Uma nova era da exploração espacial começa. Desperte para o desconhecido.</p>
+            </div>
+        </section>
+
+        <!-- SOBRE A SÉRIE -->
+        <section class="secao" id="sobre">
+            <h2 class="secao-titulo">Sobre a Série</h2>
+            <div class="sobre-flex">
+                <img src="imagens/bridge_interior.png" alt="Interior da ponte de comando da nave com telas holográficas">
+                <div class="sobre-texto">
+                    <h3>Uma Missão Para o Futuro da Galáxia</h3>
+                    <p>
+                        <strong style="color: var(--branco);">Star Trek: Discovery</strong> é uma série de ficção científica
+                        exibida originalmente na plataforma Paramount+. Ambientada no universo Star Trek,
+                        ela acompanha a tripulação da USS Discovery em suas aventuras pelo espaço.
+                    </p>
+                    <p>
+                        A série foi criada por Bryan Fuller e Alex Kurtzman, estreando em setembro de 2017.
+                        Ela se destaca por trazer uma narrativa mais sombria e madura, além de personagens
+                        complexos e efeitos visuais de altíssimo nível.
+                    </p>
+                    <p>
+                        Com 4 temporadas concluídas, Discovery explorou guerras Klingon, viagem no tempo,
+                        anjos vermelhos, a "Queima" e muito mais. É uma das séries mais inovadoras do
+                        universo Star Trek.
+                    </p>
+                    <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 15px;">
+                        <span class="badge badge-azul">Ficção Científica</span>
+                        <span class="badge badge-azul">Aventura</span>
+                        <span class="badge badge-dourado">4 Temporadas</span>
+                        <span class="badge badge-dourado">2017 &ndash; 2024</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divisor"></div>
+
+        <!-- CARDS DAS TEMPORADAS -->
+        <section class="secao" id="temporadas">
+            <h2 class="secao-titulo">Temporadas</h2>
+            <div class="cards-container">
+
+                <!-- Card Temporada 1 -->
+                <a href="temporada1.html" class="card" id="card-t1">
+                    <img src="imagens/season1_klingon.png" alt="Batalha espacial da Temporada 1 com nave Klingon">
+                    <div class="card-corpo">
+                        <span class="card-numero">Temporada 01 &bull; 2017</span>
+                        <h3>A Guerra Klingon</h3>
+                        <p>Michael Burnham embarca em uma jornada após um incidente que muda toda a galáxia. A guerra Klingon começa.</p>
+                        <span class="card-link">Ver detalhes &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Card Temporada 2 -->
+                <a href="temporada2.html" class="card" id="card-t2">
+                    <img src="imagens/season2_red_angel.png" alt="Anjo vermelho misterioso no espaço na Temporada 2">
+                    <div class="card-corpo">
+                        <span class="card-numero">Temporada 02 &bull; 2019</span>
+                        <h3>O Anjo Vermelho</h3>
+                        <p>Sinais misteriosos aparecem pela galáxia e a figura do Anjo Vermelho ameaça o destino de toda a vida inteligente.</p>
+                        <span class="card-link">Ver detalhes &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Card Temporada 3 -->
+                <a href="temporada3.html" class="card" id="card-t3">
+                    <img src="imagens/season3_future.png" alt="Estação espacial futurista do século 32 na Temporada 3">
+                    <div class="card-corpo">
+                        <span class="card-numero">Temporada 03 &bull; 2020</span>
+                        <h3>O Século 32</h3>
+                        <p>A Discovery viaja 930 anos para o futuro e descobre uma Federação enfraquecida após um evento catastrófico.</p>
+                        <span class="card-link">Ver detalhes &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Card Temporada 4 -->
+                <a href="temporada4.html" class="card" id="card-t4">
+                    <img src="imagens/enterprise_space.png" alt="Nave espacial Enterprise no espaço representando a Temporada 4">
+                    <div class="card-corpo">
+                        <span class="card-numero">Temporada 04 &bull; 2021</span>
+                        <h3>A Anomalia</h3>
+                        <p>Uma anomalia de matéria escura ameaça destruir mundos inteiros. A Discovery lidera a investigação.</p>
+                        <span class="card-link">Ver detalhes &rarr;</span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <div class="divisor"></div>
+
+        <!-- DADOS RÁPIDOS -->
+        <section class="secao" id="dados">
+            <h2 class="secao-titulo">Ficha Técnica</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+                <div style="background: rgba(7,30,61,0.6); border: 1px solid rgba(26,108,246,0.3); border-radius:6px; padding: 20px 30px; text-align:center; min-width:150px;">
+                    <div style="font-size:2rem; color:var(--azul-claro); font-family:var(--fonte-titulo); font-weight:bold;">4</div>
+                    <div style="font-size:0.75rem; color:var(--cinza); letter-spacing:2px; text-transform:uppercase; margin-top:5px;">Temporadas</div>
+                </div>
+                <div style="background: rgba(7,30,61,0.6); border: 1px solid rgba(26,108,246,0.3); border-radius:6px; padding: 20px 30px; text-align:center; min-width:150px;">
+                    <div style="font-size:2rem; color:var(--azul-claro); font-family:var(--fonte-titulo); font-weight:bold;">55</div>
+                    <div style="font-size:0.75rem; color:var(--cinza); letter-spacing:2px; text-transform:uppercase; margin-top:5px;">Episódios</div>
+                </div>
+                <div style="background: rgba(7,30,61,0.6); border: 1px solid rgba(26,108,246,0.3); border-radius:6px; padding: 20px 30px; text-align:center; min-width:150px;">
+                    <div style="font-size:2rem; color:var(--azul-claro); font-family:var(--fonte-titulo); font-weight:bold;">2017</div>
+                    <div style="font-size:0.75rem; color:var(--cinza); letter-spacing:2px; text-transform:uppercase; margin-top:5px;">Estreia</div>
+                </div>
+                <div style="background: rgba(7,30,61,0.6); border: 1px solid rgba(26,108,246,0.3); border-radius:6px; padding: 20px 30px; text-align:center; min-width:150px;">
+                    <div style="font-size:2rem; color:var(--azul-claro); font-family:var(--fonte-titulo); font-weight:bold;">8.0</div>
+                    <div style="font-size:0.75rem; color:var(--cinza); letter-spacing:2px; text-transform:uppercase; margin-top:5px;">Nota IMDB</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="footer-conteudo">
+            <div class="footer-logo">Star Trek Discovery</div>
+            <nav class="footer-nav" aria-label="Navegação do rodapé">
+                <a href="index.html">Início</a>
+                <a href="temporada1.html">Temporada 1</a>
+                <a href="temporada2.html">Temporada 2</a>
+                <a href="temporada3.html">Temporada 3</a>
+                <a href="temporada4.html">Temporada 4</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+            <p class="footer-texto">Fan Site desenvolvido para fins acadêmicos</p>
+            <p class="footer-aviso">Star Trek &copy; Paramount Pictures. Este site é não-oficial e sem fins lucrativos.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

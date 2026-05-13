@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galeria de imagens de Star Trek Discovery - explore as melhores cenas, naves e personagens da série.">
+    <title>Galeria | Star Trek Discovery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO E MENU -->
+    <header>
+        <div class="header-container">
+            <div class="logo-area">
+                <div class="logo-simbolo"></div>
+                <div class="logo-texto">
+                    <h1>Star Trek Discovery</h1>
+                    <span>Fan Site &bull; Temporadas 1 a 4</span>
+                </div>
+            </div>
+            <nav id="menu-principal">
+                <ul>
+                    <li><a href="index.html" id="nav-inicio">Início</a></li>
+                    <li><a href="temporada1.html" id="nav-t1">Temporada 1</a></li>
+                    <li><a href="temporada2.html" id="nav-t2">Temporada 2</a></li>
+                    <li><a href="temporada3.html" id="nav-t3">Temporada 3</a></li>
+                    <li><a href="temporada4.html" id="nav-t4">Temporada 4</a></li>
+                    <li><a href="galeria.html" class="ativo" id="nav-galeria">Galeria</a></li>
+                    <li><a href="contato.html" id="nav-contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+        <!-- TÍTULO DA PÁGINA -->
+        <section class="secao" id="galeria-titulo">
+            <h2 class="secao-titulo">Galeria de Imagens</h2>
+            <p style="color: var(--cinza); margin-bottom: 30px; max-width: 600px;">
+                Uma seleção das melhores imagens do universo Star Trek Discovery.
+                Passe o mouse sobre as imagens para ver as legendas.
+            </p>
+
+            <!-- GALERIA COM CSS GRID -->
+            <div class="galeria-grid" id="grade-galeria">
+
+                <!-- Imagem 1 - Grande (ocupa 2 colunas) -->
+                <div class="galeria-item grande" id="galeria-img-1">
+                    <img src="imagens/discovery_hero.png" alt="USS Discovery voando pelo espaço com nebulosa ao fundo">
+                    <div class="galeria-legenda">USS Discovery &mdash; A nave principal da série</div>
+                </div>
+
+                <!-- Imagem 2 - Alta (ocupa 2 linhas) -->
+                <div class="galeria-item alto" id="galeria-img-2">
+                    <img src="imagens/season1_klingon.png" alt="Batalha espacial intensa entre naves Starfleet e Klingon">
+                    <div class="galeria-legenda">Temporada 1 &mdash; A Guerra Klingon</div>
+                </div>
+
+                <!-- Imagem 3 - Normal -->
+                <div class="galeria-item" id="galeria-img-3">
+                    <img src="imagens/bridge_interior.png" alt="Interior da ponte de comando futurista com telas holográficas">
+                    <div class="galeria-legenda">Ponte de Comando &mdash; O centro da Discovery</div>
+                </div>
+
+                <!-- Imagem 4 - Normal -->
+                <div class="galeria-item" id="galeria-img-4">
+                    <img src="imagens/enterprise_space.png" alt="Nave Enterprise orbitando planeta com o espaço ao fundo">
+                    <div class="galeria-legenda">USS Enterprise &mdash; Nave lendária de Star Trek</div>
+                </div>
+
+                <!-- Imagem 5 - Normal -->
+                <div class="galeria-item" id="galeria-img-5">
+                    <img src="imagens/season2_red_angel.png" alt="Figura luminosa vermelha do Anjo Vermelho no espaço profundo">
+                    <div class="galeria-legenda">Temporada 2 &mdash; O misterioso Anjo Vermelho</div>
+                </div>
+
+                <!-- Imagem 6 - Grande (ocupa 2 colunas) -->
+                <div class="galeria-item grande" id="galeria-img-6">
+                    <img src="imagens/season3_future.png" alt="Estação espacial avançada do século 32 com energia azul">
+                    <div class="galeria-legenda">Temporada 3 &mdash; A Federação no Século 32</div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="divisor"></div>
+
+        <!-- LEGENDA DAS TEMPORADAS -->
+        <section class="secao" id="info-galeria">
+            <h2 class="secao-titulo">Sobre as Imagens</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 15px;">
+                <div style="flex: 1; min-width: 220px; background: rgba(7,30,61,0.5); border: 1px solid rgba(26,108,246,0.2); border-radius: 6px; padding: 18px;">
+                    <div style="color: var(--azul-claro); font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;">Temporada 1</div>
+                    <p style="color: var(--cinza); font-size: 0.88rem; line-height: 1.6;">
+                        Cenas épicas de batalha entre a Starfleet e as forças Klingon, em uma guerra que ameaçou toda a Federação.
+                    </p>
+                </div>
+                <div style="flex: 1; min-width: 220px; background: rgba(7,30,61,0.5); border: 1px solid rgba(26,108,246,0.2); border-radius: 6px; padding: 18px;">
+                    <div style="color: var(--azul-claro); font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;">Temporada 2</div>
+                    <p style="color: var(--cinza); font-size: 0.88rem; line-height: 1.6;">
+                        A figura enigmática do Anjo Vermelho guia a tripulação por sete sinais misteriosos espalhados pela galáxia.
+                    </p>
+                </div>
+                <div style="flex: 1; min-width: 220px; background: rgba(7,30,61,0.5); border: 1px solid rgba(26,108,246,0.2); border-radius: 6px; padding: 18px;">
+                    <div style="color: var(--azul-claro); font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;">Temporada 3</div>
+                    <p style="color: var(--cinza); font-size: 0.88rem; line-height: 1.6;">
+                        A tecnologia do século 32 impressiona com estações orbitais colossais e campos de energia avançados.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="footer-conteudo">
+            <div class="footer-logo">Star Trek Discovery</div>
+            <nav class="footer-nav" aria-label="Navegação do rodapé">
+                <a href="index.html">Início</a>
+                <a href="temporada1.html">Temporada 1</a>
+                <a href="temporada2.html">Temporada 2</a>
+                <a href="temporada3.html">Temporada 3</a>
+                <a href="temporada4.html">Temporada 4</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+            <p class="footer-texto">Fan Site desenvolvido para fins acadêmicos</p>
+            <p class="footer-aviso">Star Trek &copy; Paramount Pictures. Este site é não-oficial e sem fins lucrativos.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com o site fan de Star Trek Discovery. Envie sugestões, dúvidas ou elogios sobre a série.">
+    <title>Contato | Star Trek Discovery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO E MENU -->
+    <header>
+        <div class="header-container">
+            <div class="logo-area">
+                <div class="logo-simbolo"></div>
+                <div class="logo-texto">
+                    <h1>Star Trek Discovery</h1>
+                    <span>Sou Fã &bull; Temporadas 1 a 4</span>
+                </div>
+            </div>
+            <nav id="menu-principal">
+                <ul>
+                    <li><a href="index.html" id="nav-inicio">Início</a></li>
+                    <li><a href="temporada1.html" id="nav-t1">Temporada 1</a></li>
+                    <li><a href="temporada2.html" id="nav-t2">Temporada 2</a></li>
+                    <li><a href="temporada3.html" id="nav-t3">Temporada 3</a></li>
+                    <li><a href="temporada4.html" id="nav-t4">Temporada 4</a></li>
+                    <li><a href="galeria.html" id="nav-galeria">Galeria</a></li>
+                    <li><a href="contato.html" class="ativo" id="nav-contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+        <!-- TÍTULO -->
+        <section class="secao" id="contato-titulo">
+            <h2 class="secao-titulo">Entre em Contato</h2>
+            <p style="color: var(--cinza); max-width: 560px; margin-bottom: 35px; line-height: 1.7;">
+                Tem alguma sugestão, dúvida sobre a série ou quer apenas compartilhar sua paixão
+                por Star Trek? Preencha o formulário abaixo e entraremos em contato.
+            </p>
+        </section>
+
+        <!-- ÁREA DE CONTATO (FLEX) -->
+        <section class="secao" id="contato-principal">
+            <div class="contato-container">
+
+                <!-- INFORMAÇÕES DE CONTATO -->
+                <div class="contato-info" id="info-contato">
+                    <h3>Informações</h3>
+                    <p>
+                        Este é um site fan, desenvolvido como projeto acadêmico para a disciplina
+                        de Desenvolvimento Web. Todo o conteúdo é de uso educacional.
+                    </p>
+
+                    <div class="contato-detalhe">
+                        <span class="detalhe-label">E-mail</span>
+                        <span>startrekfan@estudante.edu.br</span>
+                    </div>
+                    
+                    
+                    <div class="contato-detalhe">
+                        <span class="detalhe-label">Projeto</span>
+                        <span>Trabalho Prático de HTML e CSS</span>
+                    </div>
+                    <div class="contato-detalhe">
+                        <span class="detalhe-label">Ano</span>
+                        <span>2025</span>
+                    </div>
+
+                    <div style="margin-top: 25px; padding: 18px; background: rgba(7,30,61,0.6); border: 1px solid rgba(26,108,246,0.2); border-radius: 6px;">
+                        <p style="color: var(--azul-claro); font-size: 0.8rem; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px;">Nota Importante</p>
+                        <p style="color: var(--cinza); font-size: 0.85rem; line-height: 1.6;">
+                            Star Trek é uma propriedade da Paramount Pictures.
+                            Este site foi criado apenas para fins educacionais e
+                            não tem nenhuma afiliação oficial com a franquia.
+                        </p>
+                    </div>
+
+                    <!-- IMAGEM DECORATIVA -->
+                    <div style="margin-top: 25px;">
+                        <img src="imagens/enterprise_space.png"
+                             alt="Nave Enterprise orbitando um planeta no espaço profundo"
+                             style="width: 100%; border-radius: 6px; border: 1px solid rgba(26,108,246,0.3); object-fit: cover; height: 200px;">
+                    </div>
+                </div>
+
+                <!-- FORMULÁRIO DE CONTATO -->
+                <form class="formulario" id="formulario-contato" action="#" method="post">
+
+                    <div class="form-grupo">
+                        <label for="nome">Nome Completo</label>
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            placeholder="Seu nome aqui..."
+                            required>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="email">E-mail</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="seu@email.com"
+                            required>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="assunto">Assunto</label>
+                        <select id="assunto" name="assunto">
+                            <option value="">Selecione um assunto...</option>
+                            <option value="sugestao">Sugestão de conteúdo</option>
+                            <option value="elogio">Elogio</option>
+                            <option value="erro">Reportar um erro</option>
+                            <option value="temporada">Dúvida sobre uma temporada</option>
+                            <option value="outro">Outro assunto</option>
+                        </select>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="temporada-favorita">Temporada Favorita</label>
+                        <select id="temporada-favorita" name="temporada_favorita">
+                            <option value="">Escolha sua favorita...</option>
+                            <option value="t1">Temporada 1 &mdash; A Guerra Klingon</option>
+                            <option value="t2">Temporada 2 &mdash; O Anjo Vermelho</option>
+                            <option value="t3">Temporada 3 &mdash; O Século 32</option>
+                            <option value="t4">Temporada 4 &mdash; A Anomalia</option>
+                            <option value="todas">Todas são incríveis!</option>
+                        </select>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea
+                            id="mensagem"
+                            name="mensagem"
+                            placeholder="Escreva sua mensagem aqui. Pode falar sobre qualquer coisa relacionada à série..."
+                            required></textarea>
+                    </div>
+
+                    <div class="form-grupo" style="flex-direction: row; align-items: center; gap: 10px;">
+                        <input type="checkbox" id="concordo" name="concordo" style="width: auto; cursor: pointer;">
+                        <label for="concordo" style="text-transform: none; letter-spacing: 0; font-size: 0.82rem; color: var(--cinza); cursor: pointer;">
+                            Concordo que este é um site acadêmico sem fins lucrativos.
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-enviar" id="btn-enviar-form">
+                        Enviar Mensagem
+                    </button>
+
+                </form>
+
+            </div>
+        </section>
+
+        <div class="divisor"></div>
+
+        <!-- FAQ RÁPIDO -->
+        <section class="secao" id="perguntas-frequentes">
+            <h2 class="secao-titulo">Perguntas Frequentes</h2>
+            <div style="display: flex; flex-direction: column; gap: 12px; max-width: 750px;">
+
+                <div style="background: rgba(7,30,61,0.5); border: 1px solid rgba(26,108,246,0.2); border-radius: 4px; padding: 16px 20px;">
+                    <p style="color: var(--branco); font-size: 0.95rem; margin-bottom: 6px; font-weight: bold;">Onde posso assistir Star Trek Discovery?</p>
+                    <p style="color: var(--cinza); font-size: 0.87rem; line-height: 1.6;">A série está disponível na plataforma Paramount+. Verifique a disponibilidade na sua região.</p>
+                </div>
+
+                <div style="background: rgba(7,30,61,0.5); border: 1px solid rgba(26,108,246,0.2); border-radius: 4px; padding: 16px 20px;">
+                    <p style="color: var(--branco); font-size: 0.95rem; margin-bottom: 6px; font-weight: bold;">Quantas temporadas existem?</p>
+                    <p style="color: var(--cinza); font-size: 0.87rem; line-height: 1.6;">Star Trek Discovery possui 5 temporadas no total. Este site aborda as 4 primeiras.</p>
+                </div>
+
+                <div style="background: rgba(7,30,61,0.5); border: 1px solid rgba(26,108,246,0.2); border-radius: 4px; padding: 16px 20px;">
+                    <p style="color: var(--branco); font-size: 0.95rem; margin-bottom: 6px; font-weight: bold;">Este site é oficial?</p>
+                    <p style="color: var(--cinza); font-size: 0.87rem; line-height: 1.6;">Não. Este é um site fan criado como trabalho acadêmico da disciplina de desenvolvimento web. Não possui afiliação com a Paramount Pictures.</p>
+                </div>
+
+                <div style="background: rgba(7,30,61,0.5); border: 1px solid rgba(26,108,246,0.2); border-radius: 4px; padding: 16px 20px;">
+                    <p style="color: var(--branco); font-size: 0.95rem; margin-bottom: 6px; font-weight: bold;">Precisa ter visto Star Trek clássico para entender?</p>
+                    <p style="color: var(--cinza); font-size: 0.87rem; line-height: 1.6;">Não é necessário, mas ajuda! Discovery foi criada para atrair novos fãs, sendo acessível mesmo para quem nunca assistiu a franquia antes.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="footer-conteudo">
+            <div class="footer-logo">Star Trek Discovery</div>
+            <nav class="footer-nav" aria-label="Navegação do rodapé">
+                <a href="index.html">Início</a>
+                <a href="temporada1.html">Temporada 1</a>
+                <a href="temporada2.html">Temporada 2</a>
+                <a href="temporada3.html">Temporada 3</a>
+                <a href="temporada4.html">Temporada 4</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+            <p class="footer-texto">Fan Site desenvolvido para fins acadêmicos</p>
+            <p class="footer-aviso">Star Trek &copy; Paramount Pictures. Este site é não-oficial e sem fins lucrativos.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
